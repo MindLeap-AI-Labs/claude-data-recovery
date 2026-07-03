@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+.idea/
+.vscode/
+.venv/
+venv/
+build/
+dist/
+claude-recovery-output/
+
+# Claude exports contain private data and must never be committed.
+conversations.json
+users.json
+memories.json
+projects/
+design_chats/
+data-*.zip
+
+# Keep the repository's explicitly synthetic test fixture.
+!tests/fixtures/sample_export/conversations.json
+!tests/fixtures/sample_export/users.json
+!tests/fixtures/sample_export/memories.json
+!tests/fixtures/sample_export/projects/
+!tests/fixtures/sample_export/projects/*.json
